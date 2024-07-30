@@ -5,18 +5,14 @@
     justify-content: center;
     align-items: center;
 }
-.column1{
-    gap: 50px;
-}
-.column1 p{
+
+.column {
     font-family: Inter, san-serif;
     font-weight: 300;
-    size: 11px;
-    color: #fff;
+    
 }
-.column1 p, span{
-    padding-left: 30px;
+.column h2{
+    text-align: center;
 }
-.input{
-    gap: 20px;
-}
+
+   

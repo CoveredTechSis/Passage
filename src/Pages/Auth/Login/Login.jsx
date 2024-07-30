@@ -1,31 +1,35 @@
 import React from 'react'
 import "./Login.css"
+import { IoEye } from "react-icons/io5";
+import { IoEyeOff } from "react-icons/io5";
+import { useState } from 'react';
 import { Link, useNavigate } from "react-router-dom";
 
  const Login = () => {
+    const [seePassword, setSeePassword] = useState(false)
   return (
     <div className='Login__container'>
-        <div className='column1'>
-            <img src="" alt="" />
-            <div>
-                <h3>New Here?</h3>
+        <div className='column'>
+            <div >
+            <h2>Welcome back </h2>
+            <p>Please enter your details to login</p>
             </div>
-            <div className='column1__p'>
-                <p>Sign up and benefit from a whole world of opportunities.</p>
-               <button> <Link to="/signup">Sign Up</Link></button>
-            </div>
-        </div>
-        <div className='column2'>
-            <h2>Login to your <br /><span>account</span> </h2>
             
 
             <div className="input">
                 <input type="email"  placeholder='Email'/>
+                <div className='password'>
                 <input type="password" placeholder='Password'/>
-                 <div className='column2__p'>
-                    <button>Sign in</button>
+                {seePassword?<IoEyeOff onClick={()=>setSeePassword(!seePassword)}/>: <IoEye onClick={()=>setSeePassword(!seePassword)}/>}
+                </div>
+                 <div className='column__p'>
+                    <button>Log in</button>
                     <p>Forgot your password?</p>
                  </div>
+            </div>
+
+            <div className="social">
+
             </div>
         </div>
     </div>
