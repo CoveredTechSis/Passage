@@ -1,0 +1,22 @@
+.Signup__container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.column1{
+    gap: 50px;
+}
+.column1 p{
+    font-family: Inter, san-serif;
+    font-weight: 300;
+    size: 11px;
+    color: #fff;
+}
+.column1 p, span{
+    padding-left: 30px;
+}
+.input{
+    gap: 20px;
+}
