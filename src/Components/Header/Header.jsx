@@ -9,7 +9,7 @@ export const Header = () => {
         <div className="nav">
             <div>Categories</div>
            <div>About</div>
-            <div>Sell a ticket</div>
+            <div>Sell a tickets</div>
         </div>
         <div className="profile">
            <img src="" alt="" />
