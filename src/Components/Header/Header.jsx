@@ -5,13 +5,14 @@ import { GoPerson } from "react-icons/go";
 import { RxCaretDown } from "react-icons/rx";
 import { RxCaretUp } from "react-icons/rx";import { IoIosSearch } from "react-icons/io";
 import { useState } from "react";
+import logo from "/icons/logo.png"
 
 export const Header = () => {
   const [showDropDown, setShowDropDown] = useState(false);
   return (
     <div className='Header__container'>
         <div className="logo">
-            <img src="" alt="" />
+            <img src={logo} alt="logo" />
         </div>
         <div className='searchbar'>
           <input type="search" placeholder='Find event' />
