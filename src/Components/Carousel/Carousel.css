@@ -1,17 +1,32 @@
-.container{
+.Carousel__container{
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
-    background-color: aqua;
-}
-.carousel-item{
-    display: flex;
     min-width: 100%;
     justify-content: center;
     align-items: center;
     transition: cubic-bezier(0.39, 0.575, 0.565, 1);
-}
-.image{
+} 
+
+ .images{
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    position: relative;
+} 
+.Next__btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 50px;
+    left: 600px;
+    /* top: 300px; */
+    padding: 20px;
+   
+}
+.btn{
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
 }
