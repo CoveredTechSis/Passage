@@ -3,6 +3,8 @@ import './EventPost.css'
 import karaoke from '/images/karaoke.png'
 import location from '/icons/location.svg'
 import calendar from '/icons/calendar.svg'
+import share from '/icons/share.svg'
+import ticket from '/icons/ticket.svg'
 
 export const EventPost = () => {
   return (
@@ -22,6 +24,13 @@ export const EventPost = () => {
         <div className='location'> 
             <img src={location} alt="" />
             <p>Yapaddy's Hotel International, Lagos</p>
+        </div>
+        <div className='ticket'>
+            <div className='ticket__content'>
+                <img src={ticket} alt="" />
+              <p>free</p>
+            </div>
+            <img src={share} alt="" className='share' />
         </div>
         </div>
 
