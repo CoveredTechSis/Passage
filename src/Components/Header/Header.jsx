@@ -7,6 +7,7 @@ import { RxCaretUp } from "react-icons/rx";
 import { IoIosSearch } from "react-icons/io";
 import { useState } from "react";
 import logo from "/icons/logo.png";
+import { PiCaretDownBold, PiCaretUpBold } from "react-icons/pi";
 
 export const Header = () => {
   const [showDropDown, setShowDropDown] = useState(false);
@@ -15,6 +16,7 @@ export const Header = () => {
       <div className="logo">
         <img src={logo} alt="logo" />
       </div>
+      
       <div className="searchbar">
         <input type="search" placeholder="Find event" />
         <button className="search__button">
@@ -26,7 +28,10 @@ export const Header = () => {
           className="category__header"
           onClick={() => setShowDropDown(!showDropDown)}
         >
-          <h2>Category{showDropDown ? <RxCaretUp /> : <RxCaretDown />} </h2>
+          <h2>Category</h2>
+          <div className="caret">
+            {showDropDown ? <PiCaretUpBold /> : <PiCaretDownBold />}
+          </div>
           {showDropDown ? <DropCategory /> : null}
         </div>
         <h4>About</h4>
