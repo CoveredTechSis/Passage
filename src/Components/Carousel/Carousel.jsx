@@ -80,5 +80,3 @@ export const Carousel = () => {
     </div>
   );
 };
-
-// `texts ${[currentIndex + texts]}`
