@@ -59,7 +59,7 @@ export const Header = () => {
 
       <div className="profile__icon">
         <GoPerson />
-        <BiMenuAltRight />
+        <BiMenuAltRight className="BiMenuAltRight" />
       </div>
     </div>
   );

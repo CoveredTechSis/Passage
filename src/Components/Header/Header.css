@@ -86,9 +86,11 @@ button {
 
 .profile__icon {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
   place-items: center;
+}
+
+.BiMenuAltRight {
+    display: none;
 }
 
 @media screen and (max-width: 1024px) {
@@ -100,5 +102,16 @@ button {
   }
   .nav {
     display: none;
+  }
+
+  .profile__icon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    place-items: center;
+  }
+
+  .BiMenuAltRight {
+    display: flex;
   }
 }
