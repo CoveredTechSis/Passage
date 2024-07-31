@@ -1,26 +1,30 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import hero1 from  './images/hero1.png';
+import hero2 from './images/hero2.png';
+import hero3 from './images/hero3.png';
 
 export const Carousel = () => {
-    const [index, setIndex]= useState(0);
+    const [currentIndex, setCurrentIndex]= useState(0);
+    const images = [hero1, hero2, hero3]
     const length = 3;
     const handlePrevious = () => {
-        const newIndex = index - 1;
-        setIndex(newIndex < 0 ? length -1 : newIndex);
+        const newIndex = currentIndex - 1;
+        setCurrentIndex(newIndex < 0 ? length -1 : newIndex);
     };
 
     const handleNext = () => {
-        const newIndex = index + 1;
-        setIndex(newIndex >= length ? 0 : newIndex)
+        const newIndex = currentIndex + 1;
+        setCurrentIndex(newIndex >= length ? 0 : newIndex)
     }
 
 
   return (
     <div className='Carousel__container'>
         <div>
-            <button onClick = {handlePrevious}>Previous</button>
-            <button onClick={handleNext}>Next</button>
+        <img src={images[currentIndex] } className="image" alt={`Slide ${currentIndex + 1}`}/>
+            <button onClick = {handlePrevious}>{`<`}</button>
+            <button onClick={handleNext}>{`>`}</button>
             <p>{index}</p>
-            <img src="" alt="" />
         </div>
     </div>
   )
