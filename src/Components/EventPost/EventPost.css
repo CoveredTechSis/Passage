@@ -1,0 +1,55 @@
+.eventSection{
+    width: 80%;
+    height: 100vh;
+    border-radius: 20px;
+    background-color: blueviolet;
+    padding: 40px;
+     display: flex;
+    /* align-items: center;  */
+    flex-direction: column; 
+     z-index: 40; 
+    top: 40px;
+    left: 0px;
+    margin: -40px; */
+}
+
+.title{
+    padding: 20px;
+    font-size: 25px;
+    font-family: Inter;
+}
+hr{
+    width: 80px;
+    border: 5px solid blue;
+
+}
+.eventDetails{
+    width: 25%;
+    /* height: 70px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+.eventimage{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+}
+.eventimage, h5{
+    font-size: 20px;
+}
+.day{
+    display: flex;
+    gap: 20px;
+}
+.location{
+    display: flex;
+    gap: 20px;
+}
+
+.eventDetails__container{
+    display: flex;
+    gap: 30px;
+}
