@@ -6,6 +6,7 @@ import { useState } from "react";
 import logo from "/icons/logo.png";
 import search from "/icons/search.svg";
 import { PiCaretDownBold, PiCaretUpBold } from "react-icons/pi";
+import { BiMenuAltRight } from "react-icons/bi";
 
 export const Header = () => {
   const [showDropDown, setShowDropDown] = useState(false);
@@ -58,6 +59,7 @@ export const Header = () => {
 
       <div className="profile__icon">
         <GoPerson />
+        <BiMenuAltRight />
       </div>
     </div>
   );
