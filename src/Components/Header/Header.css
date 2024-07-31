@@ -6,10 +6,9 @@
   background: transparent;
   background-color: #0065C9;
   padding: 20px;
-  font-family: Inter, san-serif;
   font-size: 30px;
   font-weight: 600;
-  color: #fff;
+  color: #FDFDFD;
 }
 
 .logo img {
@@ -23,10 +22,9 @@
   align-items: center;
   gap: 20px;
   position: relative;
-  font-family: Inter, san-serif;
-  font-size: 14px;
-  font-weight: 200;
-  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  color: #FDFDFD;
 }
 
 .searchbar input {
@@ -38,7 +36,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: #FDFDFD;
   width: 40%;
   border-radius: 50px;
   border-width: 50%;
@@ -62,6 +60,7 @@ button {
     align-items: center;
     justify-content: center;
     gap: 3px;
+    cursor: pointer;
 }
 
 .caret {
@@ -69,4 +68,9 @@ button {
     place-items: center;
     font-size: 19px;
     font-weight: 700;
+}
+
+.profile__icon {
+    display: grid;
+    place-items: center;
 }

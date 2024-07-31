@@ -2,11 +2,9 @@ import React from "react";
 import "./Header.css";
 import { DropCategory } from "../DropCategory/DropCategory";
 import { GoPerson } from "react-icons/go";
-import { RxCaretDown } from "react-icons/rx";
-import { RxCaretUp } from "react-icons/rx";
-import { IoIosSearch } from "react-icons/io";
 import { useState } from "react";
 import logo from "/icons/logo.png";
+import search from "/icons/search.svg";
 import { PiCaretDownBold, PiCaretUpBold } from "react-icons/pi";
 
 export const Header = () => {
@@ -16,28 +14,33 @@ export const Header = () => {
       <div className="logo">
         <img src={logo} alt="logo" />
       </div>
-      
+
       <div className="searchbar">
         <input type="search" placeholder="Find event" />
         <button className="search__button">
-          <IoIosSearch /> search
+          <img src={search} alt="" />
+           <p>search</p>
         </button>
       </div>
+
       <div className="nav">
         <div
           className="category__header"
           onClick={() => setShowDropDown(!showDropDown)}
         >
-          <h2>Category</h2>
+          <p>Categories</p>
           <div className="caret">
             {showDropDown ? <PiCaretUpBold /> : <PiCaretDownBold />}
           </div>
           {showDropDown ? <DropCategory /> : null}
         </div>
-        <h4>About</h4>
-        <h4>Sell a ticket</h4>
+        <p>About</p>
+        <p>Sell a ticket</p>
       </div>
+
+      <div className="profile__icon">
       <GoPerson />
+      </div>
     </div>
   );
 };
