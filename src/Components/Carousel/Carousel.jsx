@@ -39,6 +39,36 @@ export const Carousel = () => {
            </div>
             <p>{currentIndex}</p>
         </div>
+        <div className='img__text'>
+                <div>
+                <h1> Davido</h1>
+                <p>Lagos</p>
+                </div>
+                <div>
+                    <p>Davido is bringing his signature sound. Join him fr a sensational night at Eko center on July 27th. Get your ticket now for an unforgettable musical experience!</p>
+                    <button>Get your ticket</button>
+                </div>
+                 <div>
+                <h1>Enyimba FC</h1>
+                <p>Aba</p>
+                </div>
+                <div>
+                    <p>Get ready towitness football magic as Enyimba FC takes on Plateau United at the iconic Enyimba intl stadium. Join the People's Eleohant family and experience the electrifying experience.</p>
+                    <button>Get your ticket</button>
+                </div>
+
+                <div>
+                <h1>Call of Duty</h1>
+                <p>Awaka</p>
+                </div>
+                <div>
+                    <p>Compete in a fierce call of duty challenge with other techies. Enjoy drinks over conversations. Bond and learn new things. Make memoriesto last a life time. </p>
+                    <button>Get your ticket</button>
+                </div>
+
+             </div>
+
+        
     </div>
   )
 }
