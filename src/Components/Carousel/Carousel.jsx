@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Carousel.css'
 import hero1 from  '/images/hero1.png';
 import hero2 from '/images/hero2.png';
@@ -21,21 +21,32 @@ export const Carousel = () => {
         setCurrentIndex(newIndex >= length ? 0 : newIndex)
     }
 
+    useEffect(() => {
+      const interval = setInterval(() => {
+        handleNext();
+    }, 5000);
+
+    return () => {
+        clearInterval(interval);
+    };
+    }, [currentIndex])
+    
+
 
   return (
     <div className='Carousel__container'>
         <div>
         <img src={images[currentIndex] } className="images" alt={`Slide ${currentIndex + 1}`}/>
            <div className='Next__btn'>
-           <div className='btn' onClick = {handlePrevious}><FaLessThan /></div>
+           <div className='btn' onClick = {handlePrevious}><FaLessThan className='FaGreaterThan' /></div>
 
-           <div className='btn' onClick = {handlePrevious}><GoDotFill /></div>
+           <div className='btn' onClick = {handlePrevious}><GoDotFill color={currentIndex === 0 ? "#FDFDFD": "#AAAAAA"} /></div>
 
-            <div className='btn' onClick = {handlePrevious}><GoDotFill /></div>
+            <div className='btn' onClick = {handlePrevious}><GoDotFill color={currentIndex === 1 ? "#FDFDFD": "#AAAAAA"} /></div>
             
-             <div className='btn' onClick = {handlePrevious}><GoDotFill /></div>
+             <div className='btn' onClick = {handlePrevious}><GoDotFill color={currentIndex === 2 ? "#FDFDFD": "#AAAAAA"} /></div>
            
-           <div className='btn' onClick={handleNext}><FaGreaterThan /></div>
+           <div className='btn' onClick={handleNext}><FaGreaterThan className='FaGreaterThan' /></div>
            </div>
             <p>{currentIndex}</p>
         </div>
