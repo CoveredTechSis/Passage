@@ -13,6 +13,9 @@
     border: 2px solid red;
     
 }
+.logo img{
+    width: 150px;
+}
 .nav{
     height: 100%;
     display: flex;
