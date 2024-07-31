@@ -1,39 +1,90 @@
-
-.Carousel__container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    min-width: 100%;
-    transition: cubic-bezier(0.39, 0.575, 0.565, 1);
-
-} 
-
- .images{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: relative;
-} 
-.Next__btn{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    bottom: 50px;
-    left: 600px;
-    /* top: 300px; */
-    padding: 20px;
-   
+.Carousel__container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  position: relative;
 }
-.btn{
-    font-size: 30px;
-    font-weight: 600;
-    color: #fff;
+
+.images {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.next__btn-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+}
+
+.next__btn {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
 }
 
 .FaGreaterThan {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+.texts__container {
+  position: absolute;
+  z-index: 1;
+  color: #fdfdfd;
+  margin-left: 65px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.texts__title {
+  font-size: 60px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.texts__state {
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 1.5;
+}
+
+.text__des {
+  width: 320px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.btn__texts-hero {
+  font-size: 14px;
+  font-family: "Figtree", sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+  .Carousel__container {
+    align-items: center;
+  }
+
+  .texts__container {
+    margin-left: 0px;
+  }
+  
+  .texts__title {
+    font-size: 30px;
+  }
 }
