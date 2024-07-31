@@ -30,3 +30,7 @@
     font-weight: 600;
     color: #fff;
 }
+
+.FaGreaterThan {
+    cursor: pointer;
+}
