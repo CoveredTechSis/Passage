@@ -8,27 +8,25 @@ import ticket from '/icons/ticket.svg'
 
 
 const EventPost = () => {
-
-  return (
-  <div className='eventSection'>
+   return (
+ <div className='eventSection'>
         <div className="title">
             <h3>Trending</h3>
             <hr/>
         </div>
 
     
-        <div className='eventDetails__container'> 
-        
-     <div className='eventDetails'>
+    <div className='eventDetails__container'> 
+       <div className='eventDetails'>
           <img src={karaoke} alt=""   className='eventimage'/>
           <h5>Karaoke Night</h5>
-         <div className='day'> 
+          <div className='day'> 
             <img src={calendar} alt="" />
             <p>Wednesdays, 6pm</p>
-         </div>
-         <div className='location'> 
-            <img src={location} alt="" />
-            <p>Yapaddy's Hotel International, Lagos</p>
+          </div>
+          <div className='location'> 
+              <img src={location} alt="" />
+              <p>Yapaddy's Hotel International, Lagos</p>
           </div>
           <div className='ticket'>
               <div className='ticket__content'>
@@ -38,13 +36,13 @@ const EventPost = () => {
               <img src={share} alt="" className='share' />
            </div>
         </div>
-
-     <div className='eventDetails'>
+     
+       <div className='eventDetails'>
           <img src={karaoke} alt="" className='eventimage'/>
            <h5>Karaoke Night</h5>
-         <div className='day'> 
-            <img src={calendar} alt="" />
-            <p>Wednesdays, 6pm</p>
+          <div className='day'> 
+             <img src={calendar} alt="" />
+             <p>Wednesdays, 6pm</p>
           </div>
           <div className='location'> 
              <img src={location} alt="" />
@@ -57,7 +55,7 @@ const EventPost = () => {
                </div>
                 <img src={share} alt="" className='share' />
                 </div>
-           </div>
+            </div>
        </div>
 
 
@@ -68,9 +66,9 @@ const EventPost = () => {
              <img src={calendar} alt="" />
              <p>Wednesdays, 6pm</p>
           </div>
-          <div className='location'> 
-            <img src={location} alt="" />
-            <p>Yapaddy's Hotel International, Lagos</p>
+           <div className='location'> 
+              <img src={location} alt="" />
+              <p>Yapaddy's Hotel International, Lagos</p>
             </div>
             <div className='ticket'>
               <div className='ticket__content'>
@@ -103,9 +101,9 @@ const EventPost = () => {
               <img src={share} alt="" className='share' />
            </div>
         </div>
-       
-</div>
-    
-  )
-}
+      </div>
+
+   
+  );
+};
 export default EventPost
