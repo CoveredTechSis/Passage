@@ -3,6 +3,7 @@ import "./Home.css";
 import { Header } from "../../Components/Header/Header";
 import { Carousel } from "../../Components/Carousel/Carousel";
 import { EventPost } from "../../Components/EventPost/EventPost";
+import { Category } from "../../Components/Category/Category";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Header />
       <Carousel />
       <EventPost />
+      <Category/>
     </div>
   );
 };
