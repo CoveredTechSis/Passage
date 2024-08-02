@@ -3,7 +3,9 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  position: relative;
+  /* position: relative; */
+  
+
 }
 
 .images {
@@ -19,7 +21,7 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 20px;
+  bottom: 100px;
 }
 
 .next__btn {

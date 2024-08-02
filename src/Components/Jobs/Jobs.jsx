@@ -1,6 +1,6 @@
 import React from 'react'
 import './Jobs.css'
-import jobs from './jobs.png'
+import jobs from '/images/jobs.png'
 
 export const Jobs = () => {
   return (
@@ -8,10 +8,10 @@ export const Jobs = () => {
         <div className='job_img'>
             <img src={jobs} alt="" />
         </div>
-        <div>
-            <h2></h2>
-            <p></p>
-            <button></button>
+        <div className='job_text'>
+            <h2>Jobs</h2>
+            <p>Join us! We are constantly looking for candidates to <br /> expand our team.</p>
+            <button> Available position</button>
         </div>
     </div>
   )

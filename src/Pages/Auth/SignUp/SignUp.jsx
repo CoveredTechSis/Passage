@@ -3,12 +3,16 @@ import "./Sign.css"
 import { IoEye } from "react-icons/io5";
 import { IoEyeOff } from "react-icons/io5";
 import { useState } from 'react';
+import { FormSwitch } from '../FormSwitch/FormSwitch';
 
 const SignUp = () => {
   const [seePassword, setSeePassword] = useState(false)
   return (
     <div className='Signup__container'>
         <div className='column'>
+          <div>
+            <FormSwitch/>
+          </div>
        <div>
        <img src="" alt="" />
             <h2>New Here ?</h2>

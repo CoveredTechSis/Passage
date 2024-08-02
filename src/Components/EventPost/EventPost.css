@@ -1,17 +1,29 @@
-.eventSection{
+.eventPost__container{
     width: 100%;
     height: 100vh;
-    border-radius: 20px;
+    margin-top: -20px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
     background-color: #fdfdfd;
-    padding: 40px;
-     display: flex;
-    /* align-items: center;  */
-    flex-direction: column; 
-     /* z-index: 40; 
-    top: 40px;
-    left: 0px;
-    margin: -40px; */ 
+    /* position: fixed; */
+    top: 10;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+
 }
+.eventSection{
+    width: 90%;
+    height: 100%;
+    background-color: #fdfdfd;
+    padding: 10px;
+    border-radius: 20px;
+     display: flex;
+    flex-direction: column;  
+}
+
 
 .title{
     padding: 20px;
@@ -24,8 +36,8 @@ hr{
 
 }
 .eventDetails{
-    width: 26%;
-    height: 500px;
+    width: 24%;
+    height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -40,9 +52,9 @@ hr{
     background-color: #fff;
 }
 .eventimage{
-    width: 300px;
+    width: 100%;
     object-fit: cover;
-    height: 300px;
+    height: 60%;
     border-radius: 20px 20px 0px 0px;
 }
 .eventDetails h5{
@@ -54,21 +66,21 @@ hr{
 .day{
     display: flex;
     gap: 20px;
-    padding: 10px;
-    
-    
+    padding: 7px;
 }
+
 .location{
     display: flex;
     gap: 20px;
-    padding: 10px;
-    
-    
+    padding: 15px;  
 }
 
 .eventDetails__container{
+    width: 100%;
+    height: 100%;
     display: flex;
-    gap: 30px;
+    gap: 20px;
+    padding-top: 10px;
    
 }
 .ticket{
@@ -80,6 +92,9 @@ hr{
 }
 .ticket__content{
     display: flex;
+    justify-content: space-evenly;
+    height: 20px;
+    gap: 20px;
 
 }
 .share{

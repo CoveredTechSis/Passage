@@ -3,20 +3,25 @@ import "./Login.css"
 import { IoEye } from "react-icons/io5";
 import { IoEyeOff } from "react-icons/io5";
 import { useState } from 'react';
-import { Link, useNavigate } from "react-router-dom";
+// import { Link, useNavigate } from "react-router-dom";
+import { FormSwitch } from '../FormSwitch/FormSwitch';
 
  const Login = () => {
     const [seePassword, setSeePassword] = useState(false)
+    
   return (
     <div className='Login__container'>
         <div className='column'>
+          <div>
+            <FormSwitch/>
+          </div>
             <div >
             <h2>Welcome back </h2>
             <p>Please enter your details to login</p>
             </div>
             
 
-            <div className="input">
+            <form className="input">
                 <input type="email"  placeholder='Email'/>
                 <div className='password'>
                 <input type="password" placeholder='Password'/>
@@ -26,7 +31,7 @@ import { Link, useNavigate } from "react-router-dom";
                     <button>Log in</button>
                     <p>Forgot your password?</p>
                  </div>
-            </div>
+            </form>
 
             <div className="social">
 

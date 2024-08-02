@@ -1,0 +1,17 @@
+.Formswitch__container{
+    width: 50px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    background-color: gray;
+}
+.Formswitch__container button{
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
