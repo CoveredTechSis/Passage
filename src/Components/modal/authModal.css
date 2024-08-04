@@ -1,0 +1,63 @@
+.authModal__container {
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.authModal__wrapper {
+    margin-top: 200px;
+    width: 40%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+    padding-block-start: 50px;
+}
+
+.MdOutlineClose {
+    color: #2c2c2c;
+    font-size: 28px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.toggle__button {
+    width: 150px;
+    height: 40px;
+    border-radius: 7px;
+    display: flex;
+    background-color: grey;
+
+}
+
+.toggle1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.toggleLogin {
+    color: #000;
+    border-radius: 7px;
+}
+
+.toggleSignUp {
+    /* background-color: rgb(81, 18, 230); */
+    border-radius: 7px;
+    color: #fff;
+}
