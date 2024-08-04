@@ -1,6 +1,8 @@
 import { MdOutlineClose } from "react-icons/md";
 import "./authModal.css";
 import { useState } from "react";
+import LoginFom from "../LoginForm/LoginFom";
+import SignUpForm from "../SignUpForm/SignUpForm";
 
 const AuthModal = ({ setModal }) => {
   const [login, setLogin] = useState(true);
@@ -27,7 +29,7 @@ const AuthModal = ({ setModal }) => {
             Signup
           </div>
         </div>
-        {login ? <form action="">Login</form> : <form action="">Sigup</form>}
+        {login ? <LoginFom /> : <SignUpForm />}
       </div>
     </div>
   );
