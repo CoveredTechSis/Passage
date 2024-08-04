@@ -28,7 +28,7 @@ const AuthModal = ({ setModal }) => {
             onClick={() => setLogin(!login)}
             style={{ background: !login ? "blue" : null }}
           >
-            
+            Sign up
           </div>
         </div>
         {/* {login ? <form action="">Login</form> : <form action="">Sigup</form>} */}
