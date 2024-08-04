@@ -3,6 +3,7 @@ import "./Login.css"
 import { IoEye } from "react-icons/io5";
 import { IoEyeOff } from "react-icons/io5";
 import { useState } from 'react';
+import { useForm } from "react-hook-form";
 // import { Link, useNavigate } from "react-router-dom";
 
 
@@ -19,14 +20,14 @@ import { useState } from 'react';
             </div>
             
 
-            <form className="input">
-                <input type="email"  placeholder='Email'/>
+            <form className="input"  onSubmit={(e)=>loginFunc(e)}>
+                <input type="email"  placeholder='Email' required={true} {...register("email")}/>
                 <div className='password'>
-                <input type="password" placeholder='Password'/>
+                <input placeholder='Password' type={seePassword? "text":"password"} {...register("password")} required={true}/>
                 {seePassword?<IoEyeOff onClick={()=>setSeePassword(!seePassword)}/>: <IoEye onClick={()=>setSeePassword(!seePassword)}/>}
                 </div>
                  <div className='column__p'>
-                    <button>Log in</button>
+                 <button type="submit" style={loading? {backgroundColor: "white"}:{}} disabled={loading? true: false}>{ loading? "Login in...": "Login"}</button>
                     <p>Forgot your password?</p>
                  </div>
             </form>

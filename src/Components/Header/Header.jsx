@@ -35,12 +35,6 @@ export const Header = () => {
   }, []);
 
   return (
-<<<<<<< HEAD
-    <>
-      <div className={`Header__container ${isScrolled ? "scrolled" : ""}`}>
-        <div className="logo">
-          <img src={logo} alt="logo" />
-=======
     <div className={`Header__container ${isScrolled ?    "scrolled" : ""}`}>
       <div className="logo">
         <img src={logo} alt="logo"/>
@@ -64,7 +58,6 @@ export const Header = () => {
             {showDropDown ? <PiCaretUpBold /> : <PiCaretDownBold />}
           </div>
           {showDropDown ? <DropCategory /> : null}
->>>>>>> 06bdb9b5f223c19b5c7168b5813dd9c12e27a59f
         </div>
 
         <div className="searchbar">
@@ -98,6 +91,6 @@ export const Header = () => {
       {
         modal ? <AuthModal setModal={setModal} /> : null
       }
-    </>
+    </div>
   );
 };

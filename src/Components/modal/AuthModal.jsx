@@ -1,6 +1,9 @@
 import { MdOutlineClose } from "react-icons/md";
 import "./authModal.css";
 import { useState } from "react";
+import {Login} from '../../Pages/Auth/Login/Login'
+import {SignUp} from '../../Pages/Auth/SignUp/SignUp'
+
 
 const AuthModal = ({ setModal }) => {
   const [login, setLogin] = useState(true);
@@ -11,6 +14,7 @@ const AuthModal = ({ setModal }) => {
           className="MdOutlineClose"
           onClick={() => setModal(false)}
         />
+        
         <div className="toggle__button">
           <div
             className="toggle1 toggleLogin"
@@ -24,10 +28,11 @@ const AuthModal = ({ setModal }) => {
             onClick={() => setLogin(!login)}
             style={{ background: !login ? "blue" : null }}
           >
-            Signup
+            
           </div>
         </div>
-        {login ? <form action="">Login</form> : <form action="">Sigup</form>}
+        {/* {login ? <form action="">Login</form> : <form action="">Sigup</form>} */}
+        {login ? <Login/> : <SignUp/>}
       </div>
     </div>
   );
