@@ -11,6 +11,8 @@ import { Cities } from "../../Components/Cities/Cities";
 import { Jobs } from "../../Components/Jobs/Jobs";
 import { Footer } from "../../Components/Footer/Footer";
 import EventPost from "../../Components/EventPost/EventPost";
+// import Overlay from "../../../Auth/Overlay";
+
 
 const Home = () => {
   return (
@@ -26,6 +28,8 @@ const Home = () => {
       <Cities/>
       <Jobs/> 
       <Footer/>
+      {/* <Overlay/> */}
+      
     </div>
   );
 };
