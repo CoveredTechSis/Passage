@@ -7,21 +7,13 @@ import logo from "/icons/logo.png";
 import search from "/icons/search.svg";
 import { PiCaretDownBold, PiCaretUpBold } from "react-icons/pi";
 import { BiMenuAltRight } from "react-icons/bi";
-import FormSwitch from "../../Pages/Auth/FormSwitch/FormSwitch";
-import { IoEye } from "react-icons/io5";
+
 
 
 
 export const Header = () => {
   const [showDropDown, setShowDropDown] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-
-
-  const [isOverlayVisible, setOverlayVisible] = useState(false);
-
-  const toggleOverlay = () => {
-    setOverlayVisible(!isOverlayVisible);
-  };
 
 
   useEffect(() => {
@@ -69,26 +61,10 @@ export const Header = () => {
         <p>Sell a ticket</p>
       </div>
 
-      <div className="profile__icon" onClick={toggleOverlay}>
+      <div className="profile__icon">
         <GoPerson />
-        {isOverlayVisible?<GoPerson onClick={()=>setOverlayVisible(!isOverlayVisible)}/>: <IoEye onClick={()=>setOverlayVisible(!isOverlayVisible)}/>}
         <BiMenuAltRight className="BiMenuAltRight" />
       </div>
-
-
-      {isOverlayVisible && (
-        <div className="overlay">
-    
-          <div className="overlay-content">
-         <div className="close-overlay" onClick={toggleOverlay} >X</div>
-
-
-          <div className="close-overlay" onClick={toggleOverlay}>X</div>
-            <FormSwitch/>
-          </div>
-        </div>
-      )}
-
     </div>
   );
 };
