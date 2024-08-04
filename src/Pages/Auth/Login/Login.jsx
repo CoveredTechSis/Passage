@@ -4,7 +4,7 @@ import { IoEye } from "react-icons/io5";
 import { IoEyeOff } from "react-icons/io5";
 import { useState } from 'react';
 // import { Link, useNavigate } from "react-router-dom";
-import { FormSwitch } from '../FormSwitch/FormSwitch';
+
 
  const Login = () => {
     const [seePassword, setSeePassword] = useState(false)
@@ -12,9 +12,7 @@ import { FormSwitch } from '../FormSwitch/FormSwitch';
   return (
     <div className='Login__container'>
         <div className='column'>
-          <div>
-            <FormSwitch/>
-          </div>
+      
             <div >
             <h2>Welcome back </h2>
             <p>Please enter your details to login</p>

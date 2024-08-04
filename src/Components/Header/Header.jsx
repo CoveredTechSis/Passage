@@ -9,10 +9,14 @@ import { PiCaretDownBold, PiCaretUpBold } from "react-icons/pi";
 import { BiMenuAltRight } from "react-icons/bi";
 import AuthModal from "../modal/AuthModal";
 
+
+
+
 export const Header = () => {
   const [modal, setModal] = useState(false);
   const [showDropDown, setShowDropDown] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,10 +35,36 @@ export const Header = () => {
   }, []);
 
   return (
+<<<<<<< HEAD
     <>
       <div className={`Header__container ${isScrolled ? "scrolled" : ""}`}>
         <div className="logo">
           <img src={logo} alt="logo" />
+=======
+    <div className={`Header__container ${isScrolled ?    "scrolled" : ""}`}>
+      <div className="logo">
+        <img src={logo} alt="logo"/>
+      </div>
+
+      <div className="searchbar">
+        <input type="search" placeholder="Find event" />
+        <button className="search__button">
+          <img src={search} alt="" />
+          <p>search</p>
+        </button>
+      </div>
+
+      <div className="nav">
+        <div
+          className="category__header"
+          onClick={() => setShowDropDown(!showDropDown)}
+        >
+          <p>Categories</p>
+          <div className="caret">
+            {showDropDown ? <PiCaretUpBold /> : <PiCaretDownBold />}
+          </div>
+          {showDropDown ? <DropCategory /> : null}
+>>>>>>> 06bdb9b5f223c19b5c7168b5813dd9c12e27a59f
         </div>
 
         <div className="searchbar">

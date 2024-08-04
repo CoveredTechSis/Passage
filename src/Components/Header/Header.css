@@ -8,12 +8,12 @@
   padding: 20px;
   font-size: 30px;
   font-weight: 600;
-  color: #fdfdfd;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
+  color: #fdfdfd;
 }
 
 .Header__container.scrolled {
@@ -106,13 +106,18 @@ button {
     display: none;
   }
 
+
+  
+
   .profile__icon {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
     place-items: center;
+    cursor: pointer;
   }
-
+  
+  
   .BiMenuAltRight {
     display: flex;
   }
