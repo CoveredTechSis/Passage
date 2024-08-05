@@ -6,13 +6,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 2;
+    z-index: 20;
 }
 
 .authModal__wrapper {
-    margin-top: 200px;
+    margin-top: 150px;
     width: 40%;
-    height: 100vh;
+    height: 100%;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -33,11 +33,11 @@
 }
 
 .toggle__button {
-    width: 150px;
-    height: 40px;
+    width: 155px;
+    height: 39px;
     border-radius: 7px;
     display: flex;
-    background-color: grey;
+    background-color: #e5e5e5;
 
 }
 
@@ -49,15 +49,17 @@
     justify-content: center;
     font-weight: 600;
     cursor: pointer;
+    color: #000;
 }
 
 .toggleLogin {
-    color: #000;
+    color: #222222;
     border-radius: 7px;
+    height: 40px;
 }
 
 .toggleSignUp {
-    /* background-color: rgb(81, 18, 230); */
+    background-color: #e5e5e5;
     border-radius: 7px;
     color: #fff;
 }

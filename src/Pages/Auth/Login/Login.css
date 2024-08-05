@@ -1,20 +1,21 @@
 .Login__container{
-    /* width: 100%;
-    height: 100vh; */
+     width: 473;
+    height: 639px; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .column{
-    /* width: 100%;
-    height: 100%; */
+     width: 100%; 
+    height: 100%; 
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 50px;
+   
 
 }
 
@@ -26,9 +27,9 @@
     align-items: center;
 }
 input{
-    width: 300px;
-    height: 10px;
-    border-radius: 30px;
+    width: 397px;
+    height: 51px;
+    border-radius: 31.83px;
     border: 1px solid gray;
     inset: none;
     outline: none;
@@ -81,20 +82,33 @@ color: #0065c9;
     background: transparent;
     border: none;
     width: 300px;
-    /* padding: 10px; */
+    padding: 10px; 
 }
 .password{
     display: flex;
-    /* justify-content: center; */
+    justify-content: space-between;
     align-items: center;
     border: 1px solid grey;
-    width: 400px;
-    height: 50px;
+    width: 397.88px;
+    height: 51px;
     background-color: #fff;
-    border-radius: 50px;
-    padding: 0;
+    border-radius: 31.830px;
+    padding: 20;
    
 
+
+}
+.socials{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    width: Fixed (79.58px)px;
+     height: Fixed (31.83px)px;
+     padding: 6.37px 0px 0px 0px;
+     gap: 6.37px;
+     border-radius: 6.37px 0px 0px 0px;
+     opacity: 0px;
 
 }
 
